@@ -1,24 +1,39 @@
-import logo from './logo.svg';
+import { React, useEffect, useState } from 'react';
 import './App.css';
+import { Route,Routes } from 'react-router-dom';
+// import Navigation  from './config/navigation';
+// import MatchDetail  from './config/matchDetail';
+// import ODI from "./config/odi"
+// import Home from "./config/home"
+import Soccer from "./components/soccer"
 
 function App() {
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+<h1 style={{textAlign:"center"}}>Soccer Api</h1>
+    <Soccer/>
+  {/* <Routes >
+<Route path='/' element={<Home/>}>
+
+</Route>
+
+<Route path='/navigation' element={<Navigation/>}>
+
+</Route>
+
+<Route path='/matchDetail/:id' element={<MatchDetail/>}>
+
+</Route>
+
+
+<Route path='/odi' element={<ODI/>}>
+
+</Route>
+</Routes> */}
+ 
+    </>
   );
 }
 
